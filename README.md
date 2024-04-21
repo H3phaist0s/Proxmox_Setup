@@ -13,11 +13,15 @@ This is a repository containing some of the scripts and tools I use to configure
     - [user-data](#user-data)
   * [Terraform](#terraform)
   * [Ansible](#ansible)
-
+  * [WIP](#wip)
 
 ## General
 
+Currently my homelab is running on a Proxmox server. I use Packer to create new VM templates and Terraform to deploy new VM's from those templates. The end goal is to create general purpose scripts and tools for other users who are looking at how to get into self-hosting and homelabbing.
+
 ## Proxmox
+
+Proxmox is a debian based [type 1 hypervisor](https://en.wikipedia.org/wiki/Hypervisor#Classification). It's open source and has extensive community support from its dedicated userbase. In the wake of VMWare's acquisition by Broadcom I know a lot of VMWare users sought to jump ship and landed on Proxmox. I personally enjoy using it, it's a great platform for deploying and managing virtual machines. There are plenty of intergrations with other open source tools such as Packer, Terraform and Ansible which allow for the automation of a lot of tasks. Proxmox also supports LXC containers, which run with less overhead then convential virtual machines and are less taxing on the physical hardware of the host. I think it's fair to say Proxmox has a bit of a learning curve but its well worth the trouble. For more info you can visit their official [site](https://www.proxmox.com/en/proxmox-virtual-environment/overview).
 
 ## Packer
 
@@ -34,3 +38,6 @@ Additionally, this script installs Docker on the VM once it has been created bef
 ## Terraform
 
 ## Ansible
+
+## WIP
+Ansible, Terraform, are still currently WIP. I am working on creating a more automated way to deploy VM's from the templates created by Packer and then managing them with Ansible. 
