@@ -6,11 +6,31 @@ This is a repository containing some of the scripts and tools I use to configure
 
 - [Proxmox_Setup](#proxmox_setup)
   * [Table of Contents](#table-of-contents)
-  * [Scripts](#scripts)
-    + [Proxmox](#proxmox)
-      - [ubuntu-server-jammy-docker.pkr.hcl](#ubuntu-server-jammy-docker.pkr.hcl)
-    + [General](#general)
-  * [Resources](#resources)
-    + [Proxmox](#proxmox-1)
-    + [Docker](#docker)
-    + [PiHole](#pihole)
+  * [General](#general)
+  * [Proxmox](#proxmox)
+  * [Packer](#packer)
+    - [ubuntu-server-jammy-docker.pkr.hcl](#ubuntu-server-jammy-docker.pkr.hcl)
+    - [user-data](#user-data)
+  * [Terraform](#terraform)
+  * [Ansible](#ansible)
+
+
+## General
+
+## Proxmox
+
+## Packer
+
+### ubuntu-server-jammy-docker.pkr.hcl
+This script is used to create a new VM template on Proxmox with the following specifications:
+- 2 CPU's
+- 4GB of RAM
+- 20GB of storage
+- 1 Network Interface
+Additionally, this script installs Docker on the VM once it has been created before it's converted into a template.
+
+### user-data
+
+## Terraform
+
+## Ansible
