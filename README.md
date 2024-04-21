@@ -25,6 +25,8 @@ Proxmox is a debian based [type 1 hypervisor](https://en.wikipedia.org/wiki/Hype
 
 ## Packer
 
+Packer is an open-source image automation tool from Hashicorp. For my purposes I use it to automate the creation of server templates in Proxmox. One of the best starting resources I've found to learn Packer is from Christian Lempa and his guide on [Creating VMs on Proxmox in Seconds!](https://www.youtube.com/watch?v=1nf3WOEFq1Y). 
+
 ### ubuntu-server-jammy-docker.pkr.hcl
 This script is used to create a new VM template on Proxmox with the following specifications:
 - 2 CPU's
