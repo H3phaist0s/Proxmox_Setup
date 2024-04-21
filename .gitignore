@@ -1,2 +1,4 @@
 Configs/
 .vscode/launch.json
+packer/credentials.pkr.hcl
+packer/ubuntu-jammy-docker/http/user-data
