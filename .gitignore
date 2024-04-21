@@ -3,5 +3,3 @@ Configs/
 packer/credentials.pkr.hcl
 packer/ubuntu-jammy-docker/http/user-data
 packer/packer_cache/
-.gitattributes
-.gitignore
