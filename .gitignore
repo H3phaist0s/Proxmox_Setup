@@ -3,3 +3,6 @@ Configs/
 packer/credentials.pkr.hcl
 packer/ubuntu-jammy-docker/http/user-data
 packer/packer_cache/
+terraform/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/windows_amd64/README.md
+terraform/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/windows_amd64/LICENSE
+terraform/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/windows_amd64/terraform-provider-proxmox_v3.0.1-rc1.exe
