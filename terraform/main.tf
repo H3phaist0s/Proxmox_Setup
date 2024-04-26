@@ -1,5 +1,6 @@
-resource "proxmox_vm_qemu" "test1" {
-    name = "test1"
+resource "proxmox_vm_qemu" "VM" {
+    count = 5
+    name = "VM-${count.index + 1}"
     target_node = "pve"
     vmid = 100
     desc = "Test VM"
@@ -17,6 +18,6 @@ resource "proxmox_vm_qemu" "test1" {
     }
 
     os_type = "cloud-init"
-    ipconfig0 = "ip=192.168.0.100/24,gw=192.168.0.1"
+    ipconfig0 = "ip=192.168.0.${count.index + 100}/24,gw=192.168.0.1"
     nameserver = "192.168.0.10"
 }
