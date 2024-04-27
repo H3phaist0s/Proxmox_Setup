@@ -1,23 +1,32 @@
-resource "proxmox_vm_qemu" "VM" {
+resource "proxmox_virtual_environment_vm" "VM" {
     count = 5
-    name = "VM-${count.index + 1}"
-    target_node = "pve"
-    vmid = 100
-    desc = "Test VM"
-    agent = 1
-
-    clone = "ubuntu-server-jammy"
-    cores = 2
-    sockets = 1
-    cpu = "host"
-    memory = 2048
-
-    network {
-        model = "virtio"
-        bridge = "vmbr0"
+    name = "VM"
+    node_name = "pve"
+    
+    clone {
+        vm_id = 1337
+        full = true
     }
 
-    os_type = "cloud-init"
-    ipconfig0 = "ip=192.168.0.${count.index + 100}/24,gw=192.168.0.1"
-    nameserver = "192.168.0.10"
+    initialization {
+
+        datastore_id = "local-lvm"
+
+        ip_config {
+            ipv4 {
+                address = "192.168.0.100/24"
+                gateway = "192.168.0.1"
+            }
+        }
+
+        dns {
+            servers = ["192.168.0.10"]
+        }
+    }
+
+    network_device {
+        bridge = "vmbr0"
+        model = "virtio"
+    }
+
 }
