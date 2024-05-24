@@ -1,6 +1,6 @@
 resource "proxmox_virtual_environment_vm" "VM" {
-    count = 5
-    name = "VM"
+    count = 1
+    name = "VM-${count.index}"
     node_name = "pve"
     
     clone {
@@ -14,7 +14,7 @@ resource "proxmox_virtual_environment_vm" "VM" {
 
         ip_config {
             ipv4 {
-                address = "192.168.0.100/24"
+                address = "192.168.0.${count.index + 100}/24"
                 gateway = "192.168.0.1"
             }
         }
