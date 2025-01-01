@@ -7,6 +7,7 @@ provider "registry.terraform.io/bpg/proxmox" {
   hashes = [
     "h1:8BezUjbYmUiTyM7bGVMXPPj0g+hQzzGmFHh1oh2jvnI=",
     "h1:YJ1zZF+m9PGO4rFhsViHuNoe2ANseAANCAfgZxx3dZA=",
+    "h1:xgDrDol/cYu93YOPTL0UVpURchPzdxPXaHjcoieoXXI=",
     "zh:4521f8893b4645c93e75ffc3545ea59d3f31aed7cea4c26dcd0fbd7c0cce6ca8",
     "zh:520e56abd10d888935047ef07a7577c2a1cce5bc54e25b03a0dbdc4356997ca9",
     "zh:53469dd058ef8b2ea29577f69a2681f8ffb9f79494b8c1d1594dd42ad314d7bd",

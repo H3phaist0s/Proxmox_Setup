@@ -7,3 +7,11 @@ terraform/.terraform
 terraform/credentials.auto.tfvars
 terraform/terraform.tfstate.backup
 terraform/terraform.tfstate
+.DS_Store
+terraform/secrets.tfvars
+docker/qbit/openvpn/config/auth.txt
+docker/qbit/openvpn/config/config.ovpn
+docker/qbit/downloads/
+docker/qbit/config/qBittorrent/data
+docker/qbit/config/qBittorrent/config
+docker/qbit/config/qBittorrent/cache
